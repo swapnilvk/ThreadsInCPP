@@ -71,3 +71,8 @@ int main()
 
     return 0;
 }
+
+/* Output:
+Even sum = 902500000950000000
+Odd sum = 902500000000000000
+Duration in seconds = 8 */
