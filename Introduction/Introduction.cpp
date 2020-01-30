@@ -53,9 +53,15 @@ int main()
     ull start = 0, end = 1900000000;
 
     auto startTime = high_resolution_clock::now();
-
+/* 
     FindEvenSum(start, end);
-    FindOddSum(start, end);
+    FindOddSum(start, end); */
+
+    std::thread t1(FindEvenSum, start, end);
+    std::thread t2(FindOddSum, start, end);
+
+    t1.join();
+    t2.join();
 
     auto stopTime = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stopTime-startTime);
