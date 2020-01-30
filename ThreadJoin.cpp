@@ -25,7 +25,9 @@ int main()
     if(t1.joinable())
         t1.join();
 
-cout<<"main after"<<endl;
+cout<<"main after completion of thread"<<endl;
 
     return 0;
 }
+
+// compile: g++ -std=c++11 ThreadJoin.cpp -pthread
