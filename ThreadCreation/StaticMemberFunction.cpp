@@ -16,7 +16,7 @@ public:
 
 int main()
 {
-    std::thread t1(&Base::PrintNumbers,10);
+    std::thread t1(&Base::PrintNumbers,10); 
 
     t1.join();
     return 0;
