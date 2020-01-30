@@ -23,4 +23,4 @@ int main()
     return 0;
 }
 
-/* Compile:g++ -std=c++11 Functor.cpp -o Functor.o -pthread*/
+/* Compile:g++ -std=c++11 MemberFuction.cpp -o MemberFuction.o -pthread*/
