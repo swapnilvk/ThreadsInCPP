@@ -53,7 +53,6 @@ int main()
 
 //Compile: g++ TimedMutex.cpp -std=c++11 -pthread 
 
-
 /*Output:
 Thread 2 could not enter
 Thread 1 Entered
